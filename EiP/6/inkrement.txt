@@ -1,0 +1,19 @@
+
+  int a = 2;
+  a = ++a;  // ++a gibt den Wert a + 1 aus (3)
+  System.out.println(a);     // Ausgabe: 3
+  System.out.println(a++);   // Ausgabe: 3 // a wird ausgegeben, bevor es erhöht wird
+
+  int b = 2; 
+  b = b++; // b++ gibt b aus (2)
+  System.out.println(b);     // Ausgabe: 2
+  System.out.println(++b);   // Ausgabe: 3 (b+1 = ++b)
+
+  int n = 0;
+  int x = 0;
+  x = ++n;  // x = 1
+  System.out.println(x);     // Ausgabe: 1
+  System.out.println(n);     // Ausgabe: 1
+  x = n++; // x = 1
+  System.out.println(x);     // Ausgabe: 1
+  System.out.println(n);     // Ausgabe: 2

@@ -1,0 +1,13 @@
+Auffallend ist die hohe Abtastrate, die normalerweise bei der Hälfte liegt.
+
+Speicherort der Anzahl der Kanäle finden.
+
+Wert von 1 auf 2 setzen
+
+Die Abtastrate auf 44 AC (little endian) setzen.
+
+in Audacity öffnen
+
+Balance auf die Seite mit der geheimen Nachricht einstellen.
+
+ggf. Lautstärke und Geschwindigkeitsanpassung

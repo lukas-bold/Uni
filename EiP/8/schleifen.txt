@@ -1,0 +1,18 @@
+a)
+terminiert, da i bei jedem Schleifendurchgang größer wird und schließlich über 200 hinausgeht und die schleife verlässt.
+
+b)
+Umgeformte Bedingung (j > 0)
+Terminiert, da j pro Druchgang um 1 verringert wird und somit negative Werte annimmt.
+
+c)
+terminiert, da durch die Typenkonvertierung in java die Nachkommastellen der Division weggelassen werden (bei der Konvertierung nach int) und somit beide Werte 0 annhemen:
+0. Durchgang: i=100; j=27
+1. Durchgang: i=5; j=9
+2. Durchgang: i=0; j=3
+3. Durchgang: i=0; j=1
+4. Durchgang: i=0; j=0
+=> (i != j) == false
+
+d)
+Terminiert nicht, da x nach jedem Durchgang des for-schleife-blocks und des Update-Arguments der For-Schleife 0 ist. X ist somit immer kleiner als 1000.

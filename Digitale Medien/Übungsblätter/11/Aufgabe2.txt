@@ -1,0 +1,9 @@
+Event "click": 
+click wird ausgelöst, wenn die maustaste auf dem Objekt gedrückt und anschließend, ohne das Element zu verlassen, wieder losgelassen wird. (nach mouseup)
+Event "mousedown": 
+Wenn die Maustaste auf dem Element angedrückt wird.
+Event "mouseup": 
+Wenn die Maustaste auf dem Objekt losgelassen wird.
+
+
+Situation: Veränderung des Stiles eines Buttons. Bei mousedown kann eine anderes Stil auf den Button angewandt werden, sodass klar wird dass dieser gerade gedrückt wird.

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vorlesungen>
+	<vorlesung semester="ws1314">
+		<titel>Vorlesung Digitale Medien</titel>
+		<dozent>Prof. Dr. Heinrich Hussmann</dozent>
+		<uebung>
+			<korrektur><korrektor>Hanna</korrektor></korrektur>
+		</uebung>
+	</vorlesung>
+	
+	<vorlesung semester="ws1213">
+		<titel>Vorlesung Digitale Medien</titel>
+		<dozent>Prof. Dr. Heinrich Hussmann</dozent>
+		<uebung>
+			<korrektur><korrektor>Alexander</korrektor></korrektur>
+		</uebung>
+	</vorlesung>
+</vorlesungen>

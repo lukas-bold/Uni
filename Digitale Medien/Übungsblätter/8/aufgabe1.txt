@@ -1,0 +1,15 @@
+1)
+a)
+Während das Waveformat Datenpunkte von Audiowellen speichert, speichert MIDI lediglich die Tonhöhe, die Länge des Tons und die Stärke des Andrückens.
+
+b)
+Vorteil: MIDI Daten von Liedern sind meist wesentlich kleiner als das äquivalente Wave-File
+Nachteil: Ein MIDI File kann keine Stimmen oder Geräusche speichern
+
+c)
+WAVE ist ein unkomprimierte Codierung, dem das RIFF Dateiformat zugrunde liegt.
+MP3 auf der anderen Seite ist ein stark optimiertes und komprimiertes Dateiformat.
+
+d)
+mp3 ist ein Datencontainer aber auch eine Bezeichnung für den MPEG (1 & 2) Audio Layer III. 
+Da der MPEG 3 Standard ín MPEG 2 übernommen wurde, gibt es eigentlich keinen MPEG 3 Audio Layer III. Dieser heißt MPEG 2.

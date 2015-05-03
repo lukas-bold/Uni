@@ -1,0 +1,5 @@
+a) DIV = 2
+b) DIV = 2, number = 22, y = 12
+c) counter = 1, a = 2.0
+d) d = 3.0, counter = 2, a = 2.0
+e) number = 11, d = 3.0, counter = 2, DIV = 2

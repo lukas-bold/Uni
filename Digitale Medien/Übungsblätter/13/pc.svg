@@ -1,0 +1,30 @@
+<svg height="350" width="900">
+    <defs>
+        <rect id="cd" width="100" height="20" fill="#ddd" rx="2" ry="2"></rect>
+        <g id="power">
+            <circle cx="5" fill="#14ac00" r="5"></circle>
+            <circle cx="20" fill="#c43c00" r="5"></circle>
+        </g>
+        <g id="slots">
+            <use xlink:href="#cd"></use>
+            <use y="30" xlink:href="#cd"></use>
+            <use y="60" xlink:href="#cd"></use>
+        </g>
+        
+        <rect id="stand" x="200" y="230" height="30" width="100"></rect>
+    </defs>
+    
+    <rect x="500" y="30" height="300" width="150"></rect>
+    <use y="60" x="525" xlink:href="#slots"></use>
+    <use x="525" y="160" xlink:href="#power"></use>
+    <use  x="525" y="245" opacity="0.2" xlink:href="#cd"></use>
+    <text x="525" y="260" fill="#fff">0815 PCs, Inc</text>
+    
+    
+    <rect x="100" y="30" height="200" width="300" fill="#7d7d7d" stroke="#000" stroke-width="5"></rect>
+    <use x="150" y="230" xlink:href="#power"></use>
+    <use xlink:href="#stand"></use>
+    <use y="10" x="-50" xlink:href="#stand"></use>
+    <use y="10" x="50" xlink:href="#stand"></use>
+    <rect x="200" y="230" height="30" width="100"></rect>
+</svg> 

@@ -1,0 +1,4 @@
+Terminalbefehl um den Sound an den CIP Rechnern richtig einzustellen.
+
+
+/home/w/wimmer/bin/initSound.sh 

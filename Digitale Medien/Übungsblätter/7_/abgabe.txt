@@ -1,0 +1,25 @@
+1
+a) Fourierreihen können bei einer Konkatenation von mathematischen Fuktionen die urprünglichen Funktionen bestimmen, aus denen eine Eingangsfunktion zusammengestzt ist.
+b) Man unterteilt das Eingangssignla in verschiedene Teilbereiche, die periodische Schwingungen aufweisen und gibt an wann sich diese wiederhohlen.
+c)
+siehe 1000freq.png, 1000wert.png
+und 300freq.png, 300wert.png
+
+2
+a)
+Maskierungseffekte erwirken, dass Töne einer bestimmten Lautstärke unhörbar wird, wenn ein Ton einer höheren Lautstärke unmittelbar folgt oder vorhergeht. (zeitliche Maskierung)
+Bei der Frequenz-Maskierung vermischen sich Töne mit ähnlicher aber nicht gleicher Freq. und können so nicht differenziert wahrgenommen werden
+Dieser Effekt ist deutlich besser bei hohen Frequenzen zu beobachten als bei tieferen Frequenzen.
+
+b)
+Töne, die in dem Originalsignal durch Maskierung vom Menschen nicht oder nur sehr schwach wahrgenommen werden, können bei einer Komprimierung weggelassen werden, ohne einen merklichen Unterschied zwischen dem Original und der komprimierten Datei zu verursachen. Nur Töne, die über der Maskierungsschwelle liegen (= die wahrgenommen werden können) werden explizit codiert.
+
+3
+a) Die Störquelle ist ein lautes Brummen einer tieferen Frequenz.
+b) Mit dem Equalizer kann man einzelne Frequenzen gezielt verstärken oder unterdrücken. Man kann außerdem eigene Graphen definieren, die Lautsärkenveränderung der Frequenz repräsentiert.
+c) Mit dem Equalizer kann man tiefe Frequenzen < c.a. 100 Hz in ihrer Lautstärke verringern und hohe Frequenzen, die meist die Stimme wiedergeben verstärken. So wird die Stimme deutlicher hörbar.
+Zusätzlich kann man mit dem Rauschentferungsfilter - nomen est omen- das Rauschen weiter unterdrücken. (Freq. 220 Hz , Absenkung 16db)
+
+4
+d) Es entsteht die Illussion, dass die Soundquelle von links nach rachts (oder umgekehrt) wandert.
+

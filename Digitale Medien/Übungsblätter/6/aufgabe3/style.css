@@ -1,0 +1,19 @@
+div {
+	border: 1px dashed #000;
+	width: 600px;
+}
+#nav {
+	height: 50px;
+}
+#content {
+	height: 300px;
+}
+#footer1, #footer2 {
+	width: 300px;
+	display: inline-block;
+}
+#footer2 {
+	text-align: right;
+	margin-left: -6px;
+
+}

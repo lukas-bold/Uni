@@ -1,0 +1,39 @@
+    3
+In Zeile 17 wird o1.m() (klasse A) aufgerufen, was 1 ergibt. o2.m() der Klasse B gibt 2 aus, da die Methode m() nicht in die Klasse B Vererbt, sondern überschrieben wird. Die Summe dieser beiden Werte wird dann ausgegeben.
+
+    4
+Hier wird zweimal die Methode m() der Klasse B (Objekte o1, o2) ausgeführt, die wie oben in beiden Fällen 2 liefert. Die Summe wird ausgegeben.
+
+    2
+Hier wird n() aufgerufen, das die Klasse B von der Klasse A vererbt. Diese Methode ruft wiederum die Methode this.n() auf, die im gegenwärtigen Objekt der Klasse B 2 leifert.
+
+    Parameter A: Ich bin ein A.
+Die Methode print(A) liefert einen String zurück, der mit "Parameter A: " anfängt Sie ruft außerdem die Methode toString der Klasse A auf, die zurückliefert "Ich bin ein A."
+
+    Parameter B: Ich bin ein B.
+Hier wird die Methode print(B) aufgerufen. Anfang: "Parameter B: ", toString() von o2 von Klasse B.
+
+    Parameter A: Ich bin ein B.
+Hier wird print(A) aufgrufen, da o3 ein Verweis des Typs A ist auf ein Objekt der Unterklasse B. Der Anfang lautet also "Parameter A: ". Anschließend wird toString der Klasse B aufgerufen, da o3 vom Typ B ist (da erstellt vom Konstruktor von B). Es folgt "Ich bin ein B."
+
+    4
+o1.add(o1) [Klasse A]:
+    this.a = 2
+    getA(o1)
+        this.a = 2
+=> Summe: 4
+
+    2
+o1.add(o2)
+Es wird die Methode add(A) aufgerufen, da die Klasse A keine Methode add(B) besitzt. Dort wird this.a (2) mit dem Rückgabewert von o2.getA() summiert. Dieser Rückgabewert ist 0, da die Methode getA() in der Klasse B, der o2 angehört, überschrieben wird und nun das Attribut a der Klasse B und nicht der Klasse zurückgibt. Das Attribut der Klasse B wird beim Erzeugen des Objekts mit dem Standardwert 0 belegt, der beim Aufruf von o2.getA() ausgegeben wird.
+-> 2 + 0 = 2
+
+    3
+o2.add(o3)
+Hier wird die Methode add(A) aufgerufen, die o2 von der Klasse A verbt hat. Diese greift auf Parameter a von o2 in der Klasse A zu (3). o3.getA() in der Klasse B liefert 0 (siehe o1.add(o2)).
+-> 3 + 0 = 3
+
+    0
+o2.add(o2)
+Jetzt wird die Methode add(B) der Klasse B aufgerufen. In dieser Klasse wird wiedrum 2x o2.getA() aufgerufen und miteinander summiert. Dieser Befehl gibt 0 zurück, da this.a in der Klasse B 0 ist.
+-> 0 + 0 = 0

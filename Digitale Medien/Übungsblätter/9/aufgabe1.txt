@@ -1,0 +1,23 @@
+a)
+
+a
+640 * 480 * 8 [Bit] * 8 [Byte/Bit] = 307200 [Byte]
+b
+640 * 480 * 4 [Bit] * 8 [Byte/Bit] = 153600 [Byte]
+c
+640 * 480 * 8 [Bit] * 8 [Byte/Bit] = 76800 [Byte]
+d
+640 * 480 * 8 [Bit] * 8 [Byte/Bit] = 76800 [Byte]
+
+ppi hat keinen Einfluss auf die Datengröße. Diese Größe gibt lediglich an, wie groß ein Pixel in der realen Welt angezeigt werden muss.
+
+b)
+12.7cm = 5 inch
+640px / 5 inch = 128 ppi
+
+
+c)
+640px / 320inch = 2 inch [= 5.08cm]
+480px / 320inch = 1.5 inch [= 3,81cm]
+
+5.08cm x 3.81cm

@@ -1,0 +1,148 @@
+AUFGABE 1
+(a)
+i   Lesen (k)       Codetabelle     Ausgabe     Puffer füllen
+    |               schreiben p&k   |           |
+    |---------------|---------------|-----------|-------------
+0   | (ge)          |               |           |  <ge>
+1   |  ge           | <gege>        |  ge       |  <ge>
+2   |  bl           | <gebl>        |  ge       |  <bl>
+3   |  br           | <blbr>        |  bl       |  <br>
+4   |  br           | <brbr>        |  br       |  <bl>
+5   |  we           | <blwe>        |  bl       |  <we>
+6   |  ge           | <wege>        |  we       |  <ge>
+7   |  we           | <gewe>        |  ge       |  <we>
+8   |  we           | <wewe>        |  we       |  <we>
+9   |  bl           | <webl>        |  we       |  <bl>
+10  |  bl           | <blbl>        |  bl       |  <bl>
+11  |  we           |               |           |  <blwe>
+11  |  ge           | <blwege>      | <blwe>    |  <ge>
+13  |  bl           |               |           |  <gebl>
+14  |  br           | <geblbr>      | <gebl>    |  <br>
+15  |  bl           | <brbl>        |  br       |  <bl>
+16  |               |               |  bl       |  <>
+
+(b)
+Huffman Code
+
+          gebrblwe
+             10
+      0/           \1
+      /             \
+   blwe            gebr
+    9               6
+ 0/   \1         0/   \1
+ /     \         /     \
+bl      we      ge      br
+5       4       3       3
+
+bl 00
+we 01
+ge 10
+br 11
+
+10 10 00 11
+11 01 10 01
+01 00 00 01
+10 00 11 00
+
+in einer Zeile:
+10 10 00 11 11 01 10 01 01 00 00 01 10 00 11 00
+
+(c)
+
+LZW: 14 * 4 bit =  56 bit
+Huffman: 16 * 2 bit = 32 bit
+=> Hufman ist hier effizienter
+
+AUFGABE 2
+
+i   Lesen (k)       Codetabelle     Ausgabe     Puffer füllen
+    |               schreiben p&k   |           |
+    |---------------|---------------|-----------|-------------
+0   |  (b)          |               |           | <b>       
+1   |   o           | <bo> 256      |   98      | <o>      
+2   |   b           | <ob> 257      |  111      | <b>          
+3   |   o           |               |           | <bo>      
+4   |   b           | <bob> 258     |  256      | <b>     
+5   |   o           |               |           | <bo>       
+6   |   b           |               |           | <bob>       
+7   |   o           | <bobo> 259    |  258      | <o>      
+8   |   b           |               |           | <ob>     
+9   |   o           |  <obo> 260    |  257      | <o>    
+10  |   w           |  <ow> 261     |  111      | <w>       
+11  |   e           |  <we> 262     |  119      | <e>      
+12  |   b           |  <eb> 263     |  101      | <b>       
+13  |   e           |  <be> 264     |   98      | <e>          
+14  |   w           |  <ew> 265     |  101      | <w>       
+15  |   e           |               |           | <we>      
+16  |               |               |  262      |   
+
+LZW:
+001100010
+001101111
+100000000
+100000010
+100000001
+001101111
+001110111
+001100101
+001100010
+001100101
+100000110
+
+9bit * 11 = 99 bit
+
+
+ASCII:
+01100010
+01101111
+01100010
+01101111
+01100010
+01101111
+01100010
+01101111
+01100010
+01101111
+01110111
+01100101
+01100010
+01100101
+01110111
+01100101
+
+8 bit * 16 = 128 bit
+
+Ersparnis:
+128-99/128 = 22,66 %
+
+
+AUFGABE 3
+
+(a) f = 1 / T = 1 / 8ms = 125 Hz
+(b)
+Anzahl der Samples: 5
+t in ms|Amplitude
+0       0
+4       0
+8       0
+12      0
+16      0
+
+(c)
+Anzahl der Samples: 9
+t in ms|Amplitude
+0       0
+2       +10
+4       0
+6       -10
+8       0
+10      +10
+12      0
+14      -10
+16      0
+
+(d)
+Bei 500Hz kann das signal besser rekonstuiert werden.
+Die Abtastrate muss laut nyquist-theorem GRÖßER als die doppelte Frequenz sein.
+Anderenfalls gehen zu viele Informationen über den Verlauf verloren (vgl 250HZ)

@@ -1,0 +1,40 @@
+AUFGABE 4-2
+
+1
+terminierend (nachdem eine Karte herausgenommen wurde)
+nicht korrekt
+nicht determiniert
+nicht deterministisch
+
+2
+terminierend (wenn der Kasten leer ist oder die Karte gefunden wurde)
+determiniert (für jede Eingabe gibt es ein eindeutiges Ergebnis)
+deterministisch (für jede Eingabe gibt es eine Vordefinierte Reihenfolge der Abarbeitung)
+total korrekt (jede Eingabe liefert das richtige Ergebnis und terminiert)
+partiell korrekt (da total korrekt)
+
+3
+determiniert (eine gleiche Eingabe liefert das gleiche Ergenis)
+nicht korrekt (eine Karte, die nicht vorhanden ist, liefert keine Ausgabe)
+nicht terminierend
+nicht deterministisch (zufällige Reihenfolge der Schritte)
+
+4
+terminierend (die Suche bricht nach spätestens 10 min ab)
+nicht determiniert (ist die Karte nicht vorhanden, hat die Person eine (falsche, zufällige) Karte in der Hand)
+nicht deterministisch (zufällige Reihenfolge der Schritte)
+nicht korrekt (ist die Karte nicht vorhanden, hat die Person eine (falsche, zufällige) Karte in der Hand)
+
+5
+terminierend (wenn der Kasten leer ist)
+determiniert (für jede Eingabe gibt es ein eindeutiges Ergebnis)
+nicht deterministisch (zufällige Reihenfolge der Schritte)
+total korrekt (jede Eingabe liefert das richtige Ergebnis und terminiert)
+partiell korrekt (da total korrekt)
+
+6
+terminierend
+determiniert (für jede Eingabe gibt es ein eindeutiges Ergebnis)
+deterministisch (die Eingabe legt das Ergenis und die Reihenfolge der Schitte fest)
+total korrekt (jede Eingabe liefert das richtige Ergebnis und terminiert)
+partiell korrekt (da total korrekt)

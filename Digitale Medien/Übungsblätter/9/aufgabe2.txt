@@ -1,0 +1,11 @@
+a)
+5px x 5px
+
+ohne Farbpalette
+5 * 5 * 4 / 8 = 12,5 [Byte]
+(24 bit) 5 * 5 *24 / 8 = 75 [Byte]
+
+mit Farbpalette
+12,5 + 25 * 4 / 8 = 18,75 [Byte]
+(24 bit) 75   + 25 *24 / 8 = 300 [Byte]
+

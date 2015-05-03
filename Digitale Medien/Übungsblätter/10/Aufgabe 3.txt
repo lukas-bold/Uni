@@ -1,0 +1,6 @@
+Aufgabe 3
+a)
+Chroma-Subsampling is sinnvoll, da bei Bildern an einigen Positionen im Bild Die Datenmenge für bsp. den Helligkeitskonal hoch sein muss, um eine gut Qualität aufrechtzuerhalten, jedoch die Farbinformationen nicht so fein abgespeichert werden müssen.
+
+b)
+4:1:1

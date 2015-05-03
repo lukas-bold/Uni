@@ -1,0 +1,9 @@
+x       y     z     not y   x or (not y)    y and z     x or (not y) implies y and z 
+FALSE FALSE FALSE   TRUE    TRUE            FALSE       FALSE
+FALSE FALSE TRUE    FALSE   FALSE           FALSE       TRUE
+FALSE TRUE FALSE    FALSE   FALSE           FALSE       TRUE
+FALSE TRUE TRUE     FALSE   FALSE           TRUE        TRUE
+TRUE FALSE FALSE    TRUE    TRUE            TRUE        TRUE
+TRUE FALSE TRUE     TRUE    TRUE            FALSE       FALSE
+TRUE TRUE FALSE     FALSE   TRUE            FALSE       FALSE
+TRUE TRUE TRUE      FALSE   TRUE            TRUE        TRUE

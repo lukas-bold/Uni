@@ -1,0 +1,19 @@
+5-1
+(a) int 1
+(b) int 1
+(c) ungültig, da -- eine Operation ist, die keinen Wert hat und eine Variable erfordert, die verringt werden kann
+(d) int -1
+(e) ungültig, da ein einfaches Anführungszeichen für einzelne Buchstaben (chars) vorgesehen ist, Strings benutzen doppelte Anführungszeichen
+(f) ungültig, da kein Operator zwischen 4 und (-6) angegeben ist.
+(g) int 42
+(h) kein Literal, da = eine Substitution darstellt
+(i) boolean TRUE
+(j) int 4
+(k) int -7
+(l) boolean TRUE
+(m) ungültig: nur gültig mit genauerer Deklarierung als 0x4d (int) oder "4d" (String)
+(n) int 42
+(o) 2g ist keine gültige Hexadezimalzahl
+(p) int 52
+(q) int 41
+(r) ungültig, da keine division durch 0

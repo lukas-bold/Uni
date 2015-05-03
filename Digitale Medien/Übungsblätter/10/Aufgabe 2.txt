@@ -1,0 +1,5 @@
+Aufgabe 2
+
+I P B B B I B B B
+
+Da sich die B-Frames immer auf den vohergegangenen UND auf den nachfolgenden P bzw I-Frame bezieht, muss der nachfolgende Bezugsframe vor den B-Frames übertragen werden. Anderenfalls kann des B-Frame nicht sinnvoll angezeigt werden.

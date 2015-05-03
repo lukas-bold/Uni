@@ -1,0 +1,12 @@
+3)
+a)
+- Aufnehmen einer Sounddatei
+- Suchen des Datei-Headers
+- Niederschreiben der Nachricht in ASCII Code nach dem Header in den Daten-bereich
+
+b)
+Durch die Verfälschung der Datenwerte können ungewollte, merkbare Geräusche in der Datei entstehen.
+
+c)
+Der Unterschied besteht darin dass bei Stenographie eine Nachricht versteckt wird, sodass sie nicht wahrnehmbar ist, während kryptographie eine erkennbare Nachricht so verschlüsselt, dass ihr Inhalt nicht lesbar ist.
+Hier kommt also Stenographie zum Einsatz, da zwar die ASCII Zeichen in Klartext in der Datei stehen, diese aber nicht als solche deklariert sind und folglich im normalfall auch nicht als solche interpretiert werden.

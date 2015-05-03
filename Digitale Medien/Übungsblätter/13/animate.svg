@@ -1,0 +1,50 @@
+<svg height="350" width="900">
+
+<defs>
+    
+    <ellipse id="hill" rx="300" ry="100" fill="#2da000" stroke-width="2" stroke="#fff"></ellipse>
+    <path  id="sunshine_path" d="M20 0 L40 100 L0 100 Z" style="stroke:#ede500;stroke-width:4;fill:none;" />
+    <g id="sun_">
+        <use y="-130" x="-20" xlink:href="#sunshine_path"></use>
+        <circle r="20" fill="#ede500"></circle>
+    </g>
+    <g id="sun">
+        <use xlink:href="#sun_">
+    <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="90 0 0" dur="10s" repeatCount="indefinite"/>
+        </use>
+    </g>
+    <g id="happySun">
+        <use xlink:href="#sun" transform="rotate(0)"></use>
+<use xlink:href="#sun" transform="rotate(90)"></use>
+<use xlink:href="#sun" transform="rotate(180)"></use>
+<use xlink:href="#sun" transform="rotate(270)"></use>
+    </g>
+    <g id="SunR">
+        
+<use transform="rotate(45)" opacity="0.7" xlink:href="#happySun"></use>
+    </g>
+    <g id="ball">
+        
+        <circle r="20" fill="#dc1500"></circle>
+            
+        <rect width="5" height="5" x="2" y="2" fill="#fff"></rect>
+    </g>
+</defs>
+<rect id="sky" width="100%" height="100%" fill="#0088a0" ></rect>
+<use x="350" y="300" xlink:href="#hill"></use>
+<use x="0" y="400" xlink:href="#hill"></use>
+<use x="600" y="350" xlink:href="#hill"></use>
+
+
+<use x="100" y="50" xlink:href="#happySun"></use>
+<use x="100" y="50" xlink:href="#SunR"></use>
+
+           <use xlink:href="#ball"> 
+          <animateMotion
+       path="m -117.14286,360 c 0,0 94.285717,-202.85714 500,-231.42857 C 788.57143,100 1237.1429,254.28571 1237.1429,254.28571"
+              begin="0s" dur="5s" repeatCount="indefinite"
+              />
+        </use>
+
+
+</svg> 

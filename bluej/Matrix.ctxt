@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=a1\ a2
+comment0.target=boolean\ gleich(int[],\ int[])
+comment1.params=matrix\ zeile
+comment1.target=boolean\ enthaeltZeile(int[][],\ int[])
+comment2.params=matrix\ spalte
+comment2.target=boolean\ enthaeltSpalte(int[][],\ int[])
+comment3.params=matrix
+comment3.target=int[][]\ transponieren(int[][])
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

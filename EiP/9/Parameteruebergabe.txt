@@ -1,0 +1,17 @@
+    Wer A sagt, muss auch B sagen!
+Hier werden die Strings a und b in ihrer anfänglichen Wertebelegung ausgegeben.
+
+    Also muss auch A sagen, wer B sagt?
+Hier wird auf das erste Objekt im Array ab[] zugegriffen, das den String a verweist. Dieser ist weiterhin mit "A" belegt.
+Analog: ab[1] und String b mit "B".
+
+
+    Wer A sagt, muss auch B sagen!
+    Also muss auch A sagen, wer B sagt?
+Der vorangegangene Methodenaufruf swap(String s0, String s1) bewirkt keine Änderung, da die Strings nur mit call by value an die Mathode übergeben werden und die ursprünglichen Objekte nicht verändert werden. Veräderungen an lokalen Variablen in der Methode verfallen wieder.
+Die augegebenen Zeilen sind folglich identisch zu den ersten Mathodenaufruf von proverb().
+
+    Wer A sagt, muss auch B sagen!
+    Also muss auch B sagen, wer A sagt?
+Bei swap(String[] s) werden die Referenzen, die in ab[0] und ab[1] abgelegt sind und auf String a und String b verweisen, vertauscht. In ab[0] ist so nun eine Referenz auf String b. Folglich gibt ab[0] beim Aufruf von proverb() den Wert von String b also "B" zurück (bzw. ab[1] -> a -> "A"). Die Strings a und b hingegen ble
+iben unverändert, wie man an der vorletzten Aufgabezeile erkennen kann.

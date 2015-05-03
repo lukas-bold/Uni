@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html> 
+
+    <head> 
+        <meta charset="UTF-8">
+		<title>Blatt 11 - Aufgabe 2</title>
+		
+		<script>
+		   function doSomething(){
+		     var elementsCount = 0;
+		     var parent = document.getElementById("big_parent");
+			 var childrenCount = parent.childNodes.length;
+			 var i = 0;
+			 while(i<childrenCount) {
+			   if(parent.childNodes[i].nodeType != 3) {
+			      elementsCount++;
+			   }
+			   i++;
+			 }
+			alert(elementsCount);
+		  }
+		</script>
+
+    </head>
+
+
+	<body>
+		<h1>Blatt 11 - Aufgabe 2</h1>
+		
+		<div id="big_parent" onclick="doSomething()">
+		  <div>
+		    Hallo
+		  </div>
+		  <div>
+		    Welt
+		  </div>
+		</div>
+		
+	</body>
+
+</html>

@@ -1,0 +1,17 @@
+/* Aufgabe 2a */
+div div {
+	color: blue;
+}
+
+
+/* Aufgabe 2b */
+body {
+	font-family: 'Veranda', sans-serif;
+	font-size: 0.8em;
+}
+
+
+/* Aufgabe 2c und 2d */
+.class1, #id1 {
+	background-color: red;
+}

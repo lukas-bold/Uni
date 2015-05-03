@@ -1,0 +1,23 @@
+vorlesung, titel, dozent, uebungsleitung {
+    display: block;
+}
+
+titel {
+    font-weight:bold;
+}
+dozent:before {
+    content: "Leiter";
+    font-style: italic;
+}
+uebungsleitung:before {
+    content: "Übungsleitung";
+    font-style: italic;
+}
+vorlesung {
+    margin-bottom: 15px;
+}
+vorlesung:before {
+    content: attr(semester);
+    display: block;
+    color: red;
+}

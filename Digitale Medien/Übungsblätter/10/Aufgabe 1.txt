@@ -1,0 +1,8 @@
+Aufgabe 1
+a)
+Dieser Bereich weist hohe Differenzen zwischen einzelnen Pixeln auf.
+
+b)
+Hier gibt es keine vertikale Ortsfrequenz. Nur auf Horizontale gibt es eine sehr geringe Frequenz, die in einem leichten Farbverlauf von Hellblau zu Weiß führt.
+
+

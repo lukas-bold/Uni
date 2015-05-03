@@ -1,0 +1,68 @@
+notation: (Wert)
+
+42
+IntegerLiteral
+    DecimalIntegerLiteral
+        DecimalNumeral
+            NonZeroDigit
+                (4)
+            Digits
+                Digit
+                    NonZeroDigit
+                        (2)
+
+true
+BooleanLiteral
+    (true)
+
+'z'
+CharacterLiteral
+    (')
+    SingleCharacter
+        InputCharacter
+            (z)
+    (')
+
+1e4F
+FloatingPointLiteral
+    DecimalFloatingPointLiteral
+        Digits
+            Digit
+                NonZeroDigit
+                    (1)
+        ExponentPart
+            ExponentIndicator
+                (e)
+            SignedInteger
+                Digits
+                    Digit
+                        NonZeroDigit
+                            (4)
+        FloatTypeSuffix
+            (F)
+
+
+0x2F
+IntegerLiteral
+    HexIntegerLiteral
+        HexNumeral
+            (0x)
+            HexDigits
+                HexDigit
+                    (2)
+                HexDigits
+                    HexDigit
+                        (F)
+
+042L
+IntegerLiteral
+    DecimalIntegerLiteral
+        DecimalNumeral
+            (0)
+            NonZeroDigit
+                (4)
+            Digits
+                Digit
+                    (2)
+        IntegerTypeSuffix
+            (L)
