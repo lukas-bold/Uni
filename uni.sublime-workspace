@@ -456,29 +456,45 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/Lukas/Desktop/README.md",
+			"contents": "package view;\n\nimport javafx.scene.Parent;\nimport javafx.scene.layout.GridPane;\n\npublic class GameScreen extends AbstractScene {\n\n	private GridPane grid;\n	\n	public GameScreen() {\n		super(null);\n		grid = new GridPane();\n		this.setRoot(grid);\n		grid.setId(\"map\"); // set ID for style.css\n		grid.getStylesheets().addAll(this.getClass().getResource(\"style.css\").toExternalForm());\n	}\n\n}",
+			"file": "/C/Users/Lukas/AppData/Local/Temp/Temp1_fuchsigeaquarianer-5aa28dd1991907064fa8a7b715188bacbea72b82.zip/fuchsigeaquarianer.git/Vorlage_Projekt_FuchsigeAquarianer/src/view/GameScreen.java",
+			"file_size": 382,
+			"file_write_time": 130751275633118272,
 			"settings":
 			{
-				"buffer_size": 1468,
+				"buffer_size": 382,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "type Position = Int\ntype Move = (Position,Position)\ntype Towers = ([Int],[Int],[Int])\n\nmove ::([Move],Towers) -> ([Move],Towers)\nmove ((from,to):ms, t) =\n	if verifyMove t (from, to)\n		then (ms, dest)\n		else error \"ungueltiger Zug\"\n	where\n		token = head (getTowerByID t from)\n		removedE = popTower(t, from)\n		dest = addToTower (removedE, to, token)\n\nverifyMove :: Towers -> Move -> Bool\nverifyMove t (a,b)\n	| (getTowerByID t a) == [] 	= False\n	| (getTowerByID t b) == []	= True\n	| head (getTowerByID t a) < head (getTowerByID t b) = True\n	| otherwise = False\n\npopTower :: (Towers, Position) -> Towers\npopTower ((a, b, c), 1) = (tail a, b, c)\npopTower ((a, b, c), 2) = (a,tail b, c)\npopTower ((a, b, c), 3) = (a, b,tail c)\n\naddToTower :: (Towers, Position, Int) -> Towers\naddToTower ((a, b, c), 1, x) = (x:a, b, c)\naddToTower ((a, b, c), 2, x) = (a, x:b, c)\naddToTower ((a, b, c), 3, x) = (a, b, x:c)\n\ngetTowerByID :: Towers -> Position -> [Int]\ngetTowerByID (x, _, _) 1 = x\ngetTowerByID (_, x, _) 2 = x\ngetTowerByID (_, _, x) 3 = x\n\ngame :: ([Move], Towers) -> Towers\ngame ([], t) = t\ngame (m, t) = game ( move (m,t) )",
-			"file": "Promo/2/hanoiMove.hs",
-			"file_size": 1155,
-			"file_write_time": 130751645768291836,
+			"file": "/C/Users/Lukas/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 			"settings":
 			{
-				"buffer_size": 1117,
+				"buffer_size": 202,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Rechnerarchitektur/2.md",
+			"settings":
+			{
+				"buffer_size": 22,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Lukas/AppData/Local/Temp/Temp1_fuchsigeaquarianer-5aa28dd1991907064fa8a7b715188bacbea72b82.zip/fuchsigeaquarianer.git/Vorlage_Projekt_FuchsigeAquarianer/src/view/GameScreen.java",
+			"file": "/C/Users/Lukas/git/fuchsigeaquarianer/Vorlage_Projekt_FuchsigeAquarianer/src/view/style.css",
 			"settings":
 			{
-				"buffer_size": 382,
+				"buffer_size": 279,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Rechnerarchitektur/2.html",
+			"settings":
+			{
+				"buffer_size": 48117,
 				"line_ending": "Unix"
 			}
 		},
@@ -558,9 +574,17 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "pan",
+		"last_filter": "git ",
 		"selected_items":
 		[
+			[
+				"git ",
+				"Git: Status"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
 			[
 				"pan",
 				"Pandoc"
@@ -662,10 +686,6 @@
 				"Set Syntax: Markdown Extended"
 			],
 			[
-				"rem",
-				"Package Control: Remove Package"
-			],
-			[
 				"remo",
 				"Package Control: Remove Package"
 			],
@@ -743,10 +763,6 @@
 			],
 			[
 				"comm",
-				"Git: Commit"
-			],
-			[
-				"git ",
 				"Git: Commit"
 			],
 			[
@@ -882,7 +898,7 @@
 				"Sort Lines"
 			]
 		],
-		"width": 512.0
+		"width": 416.0
 	},
 	"console":
 	{
@@ -907,10 +923,14 @@
 		"/C/Users/Lukas/Desktop/Uni/AlDa",
 		"/C/Users/Lukas/Desktop/Uni/AlDa/2",
 		"/C/Users/Lukas/Desktop/Uni/Promo",
-		"/C/Users/Lukas/Desktop/Uni/Promo/2"
+		"/C/Users/Lukas/Desktop/Uni/Promo/2",
+		"/C/Users/Lukas/Desktop/Uni/Rechnerarchitektur"
 	],
 	"file_history":
 	[
+		"/C/Users/Lukas/AppData/Roaming/Sublime Text 3/Packages/User/Java.sublime-settings",
+		"/C/Users/Lukas/Desktop/README.md",
+		"/C/Users/Lukas/Desktop/Uni/Promo/2/hanoiMove.hs",
 		"/C/Users/Lukas/AppData/Local/Temp/Temp1_fuchsigeaquarianer-5aa28dd1991907064fa8a7b715188bacbea72b82.zip/fuchsigeaquarianer.git/Vorlage_Projekt_FuchsigeAquarianer/src/model/Spielfeld.java",
 		"/C/Users/Lukas/git/fuchsigeaquarianer/Vorlage_Projekt_FuchsigeAquarianer/res/style.css",
 		"/C/Users/Lukas/Desktop/GitHubLog.txt",
@@ -920,7 +940,6 @@
 		"/C/Users/Lukas/Desktop/eclipse_workspace/Exersice/src/Liste.java",
 		"/C/Users/Lukas/Desktop/Uni/AlDa/2/Liste.java",
 		"/C/Users/Lukas/Desktop/Uni/Promo/2/seekMinMax.hs",
-		"/C/Users/Lukas/Desktop/Uni/Promo/2/hanoiMove.hs",
 		"/C/Users/Lukas/Desktop/Uni/AlDa/2/ListeGet.java",
 		"/C/Users/Lukas/Desktop/Uni/AlDa/2/IntegerListe.java",
 		"/C/Users/Lukas/Desktop/Uni/Rechnerarchitektur/Aufgabe 3.md",
@@ -1036,9 +1055,7 @@
 		"/C/Users/Lukas/Desktop/MobiCollect/app/images/work.xcf",
 		"/C/Users/Lukas/Desktop/MobiCollect/app/bower_components/bootstrap/less/tooltip.less",
 		"/C/Users/Lukas/Desktop/MobiCollect/node_modules/grunt-svgmin/node_modules/svgo/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/internal/toObject.js",
-		"/C/Users/Lukas/Desktop/MobiCollect/node_modules/grunt-recess/node_modules/lodash/internal/toObject.js",
-		"/C/Users/Lukas/Desktop/MobiCollect/test/spec/test.js",
-		"/C/Users/Lukas/Desktop/MobiCollect/app/scripts/piwik.js"
+		"/C/Users/Lukas/Desktop/MobiCollect/node_modules/grunt-recess/node_modules/lodash/internal/toObject.js"
 	],
 	"find":
 	{
@@ -1211,67 +1228,11 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/Lukas/Desktop/README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1468,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								361,
-								361
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/MarkdownEditing/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Promo/2/hanoiMove.hs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1117,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								230,
-								230
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SublimeHaskell/Syntaxes/Haskell-SublimeHaskell.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 60.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "/C/Users/Lukas/AppData/Local/Temp/Temp1_fuchsigeaquarianer-5aa28dd1991907064fa8a7b715188bacbea72b82.zip/fuchsigeaquarianer.git/Vorlage_Projekt_FuchsigeAquarianer/src/view/GameScreen.java",
 					"semi_transient": false,
 					"settings":
@@ -1283,8 +1244,8 @@
 						"selection":
 						[
 							[
-								286,
-								377
+								382,
+								382
 							]
 						],
 						"settings":
@@ -1295,11 +1256,125 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Lukas/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 202,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								146,
+								146
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Rechnerarchitektur/2.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								22,
+								22
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
+					"file": "/C/Users/Lukas/git/fuchsigeaquarianer/Vorlage_Projekt_FuchsigeAquarianer/src/view/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Rechnerarchitektur/2.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 48117,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "Promo/2/seekMinMax.hs",
 					"semi_transient": false,
 					"settings":
@@ -1323,7 +1398,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1586,7 +1661,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 102.0,
+	"side_bar_width": 256.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
