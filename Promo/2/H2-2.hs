@@ -2,6 +2,13 @@ type Position = Int
 type Move = (Position,Position)
 type Towers = ([Int],[Int],[Int])
 
+hanoi :: Int -> Position -> Position -> [Move]
+hanoi 1 i j = [(i,j)]
+hanoi n i j = hanoi n' i otherT ++ [(i,j)] ++ hanoi n' otherT j
+	where 
+		n' = n-1
+		otherT = 1+2+3-i-j
+
 move ::([Move],Towers) -> ([Move],Towers)
 move ((from,to):ms, t) =
 	if verifyMove t (from, to)
@@ -14,8 +21,8 @@ move ((from,to):ms, t) =
 
 verifyMove :: Towers -> Move -> Bool
 verifyMove t (a,b)
-	| (getTowerByID t a) == [] 	= False
-	| (getTowerByID t b) == []	= True
+	| null getTowerByID t a = False
+	| null getTowerByID t b	= True
 	| head (getTowerByID t a) < head (getTowerByID t b) = True
 	| otherwise = False
 
