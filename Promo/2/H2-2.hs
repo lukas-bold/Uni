@@ -1,3 +1,4 @@
+
 type Position = Int
 type Move = (Position,Position)
 type Towers = ([Int],[Int],[Int])
@@ -13,7 +14,7 @@ move ::([Move],Towers) -> ([Move],Towers)
 move ((from,to):ms, t) =
 	if verifyMove t (from, to)
 		then (ms, dest)
-		else error "ungueltiger Zug"
+		else error "Unbekannter Fehler"
 	where
 		token = head (getTowerByID t from)
 		removedE = popTower(t, from)
@@ -21,10 +22,14 @@ move ((from,to):ms, t) =
 
 verifyMove :: Towers -> Move -> Bool
 verifyMove t (a,b)
-	| null getTowerByID t a = False
-	| null getTowerByID t b	= True
-	| head (getTowerByID t a) < head (getTowerByID t b) = True
-	| otherwise = False
+	| not (elem a range && elem b  range)				= error "ungueltige Turm-Position"
+	| null getTowerByID t a								= error "Keine Scheibe zum Verschieben vorhanden"
+	| a == b 											= True
+	| null getTowerByID t b								= True
+	| head (getTowerByID t a) < head (getTowerByID t b)	= True
+	| otherwise 										= error "Scheibe zu gross"
+	where
+		range = [1,2,3]
 
 popTower :: (Towers, Position) -> Towers
 popTower ((a, b, c), 1) = (tail a, b, c)
